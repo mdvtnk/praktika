@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет - IoT</title>
+  </head>
+  <body>
+    <div class="header">
+      <h3 class="text_header">Здравствуйте, <span id="username"></span></h3>
+      <button onclick="document.location='index.html'" class="exit">Выйти из аккаунта</button>
+    </div>
+    <div class="leftInfo">
+      <div id="deviceInfo" class="deviceInfo">
+        <h2>Мои Устройста</h2>
+      </div>
+      <div id="sensorInfo" class="sensorInfo">
+        <h2>Мои Сенсоры</h2>
+      </div>
+    </div>
+    <div class="rightInfo">
+      <div id="deviceData" class="deviceData">
+        <h2>Данные Сенсоров</h2>
+        <p id="sensorData"></p>
+      </div>
+      <div id="grafik" class="grafik">
+        <h2>График</h2>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="/src/script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/src/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
